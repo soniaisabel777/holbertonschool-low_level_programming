@@ -23,7 +23,7 @@ int main(void)
 		second = sum;
 		
 		printf("%li", sum);
-		printf(", ");
+		if(sum < 20365011074)	printf(", ");
 	}
 
 	
