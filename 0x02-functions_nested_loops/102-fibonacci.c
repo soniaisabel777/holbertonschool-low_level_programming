@@ -15,7 +15,7 @@ int main(void)
 	first = 0;
 	second = 1;
 
-	while (sum < 20365011075)
+	while (sum < 20365011074)
 	{
 		sum = first + second;
 
