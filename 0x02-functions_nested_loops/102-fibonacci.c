@@ -1,33 +1,25 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * main - prints the sum of all even Fibonacci numbers below 4,000,000
- *
- * Return: Always 0.
- */
-
+ *  * main - Prints the Fibonacci secuence
+ *   *
+ *    * Return: Always 0.
+ *     */
 int main(void)
 {
-	long int  sum, first, second;
+	int c;
+	long int f1, f2, fn;
 
-	
-	sum = 0;
-	first = 0;
-	second = 1;
-
-	while (sum < 20365011074)
+	f1 = 1;
+	f2 = 2;
+	printf("%ld, %ld", f1, f2);
+	for (c = 0; c < 48; c++)
 	{
-		sum = first + second;
-
-		first = second;
-		second = sum;
-		
-		printf("%li", sum);
-		if(sum < 20365011074)	printf(", ");
+		fn = f1 + f2;
+		printf(", %ld", fn);
+		f1 = f2;
+		f2 = fn;
 	}
-
-	printf(" ");
-
+	printf("\n");
 	return (0);
 }
