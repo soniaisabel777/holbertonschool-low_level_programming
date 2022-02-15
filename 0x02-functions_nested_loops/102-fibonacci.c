@@ -9,25 +9,25 @@
 
 int main(void)
 {
-	long int  sum, first, second;
+long int  sum, first, second;
 
 	
-	sum = 0;
-	first = 0;
-	second = 1;
+sum = 0;
+first = 0;
+second = 1;
 
-	while (sum < 20365011074)
-	{
-		sum = first + second;
+while (sum < 20365011074)
+{
+sum = first + second;
 
-		first = second;
-		second = sum;
+first = second;
+second = sum;
 		
-		printf("%li", sum);
-		if(sum < 20365011074)	printf(", ");
-	}
+printf("%li", sum);
+if(sum < 20365011074)	printf(", ");
+}
 
-	printf("\n");
+printf("\n");
 
-	return (0);
+return (0);
 }
