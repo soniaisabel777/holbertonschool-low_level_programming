@@ -10,7 +10,6 @@
 int main(void)
 {
 long int  sum, first, second;
-
 	
 sum = 0;
 first = 0;
@@ -22,9 +21,9 @@ sum = first + second;
 
 first = second;
 second = sum;
-		
 printf("%li", sum);
-if(sum < 20365011074)	printf(", ");
+if (sum < 20365011074)
+printf(", ");
 }
 
 printf("\n");
