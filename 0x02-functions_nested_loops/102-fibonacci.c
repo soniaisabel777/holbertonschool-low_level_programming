@@ -10,7 +10,6 @@
 int main(void)
 {
 long int  sum, first, second;
-	
 sum = 0;
 first = 0;
 second = 1;
